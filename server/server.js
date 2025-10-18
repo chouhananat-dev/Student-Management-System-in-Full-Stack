@@ -55,7 +55,7 @@ app.get('/search2/:search',(req,res)=>{
 });
 
 app.post("/deletea",(req,res)=>{
-     std_id=req.query.student_id;
+     std_id=req.body.student_id;
     sql = `DELETE FROM mystd WHERE student_id= ${std_id}`
     db.query(sql,(err,result)=>{
         if(err) return res.json(err);
@@ -64,7 +64,7 @@ app.post("/deletea",(req,res)=>{
 });
 app.post('/deleteb',(req,res)=>{
     const std_name=req.body.first_name;
-    sql = `DELETE FROM mystd WHERE first_name= ${std_name}`
+    sql = `DELETE FROM mystd WHERE first_name= '${std_name}'`
     db.query(sql,(err,result)=>{
         if(err) return res.json(err);
         return res.json("successfully deleted");
@@ -73,7 +73,7 @@ app.post('/deleteb',(req,res)=>{
 
 app.post("/deletec",(req,res)=>{
     const std_class=req.body.student_class;
-    sql = `DELETE FROM mystd WHERE first_name= ${std_class}`
+    sql = `DELETE FROM mystd WHERE first_name='${std_class}'`
     db.query(sql,(err,result)=>{
         if(err) return res.json(err);
         return res.json("successfully deleted");
