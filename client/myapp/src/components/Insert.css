@@ -1,0 +1,21 @@
+.innerupdatediv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:70px
+}
+.insertbutton{
+    background-color:red;
+    color: white;
+    height:30px;
+    width:80px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 10px;
+    transition-duration: .2s;
+}
+.insertbutton:hover{
+    transform: scale(1.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
