@@ -3,3 +3,7 @@ The project primary objective is to provide an interface for managing student da
 The system consists of two parts the first is frontend created using the core concepts of React.js and CSS. The second portion is backend created using the core concepts of express.js and MySql.
 Prerequisites: Ensure that you must have node installed on your system. Then create a react environment. Express.js can be also used installed using node package manager. Also you must have MySQL installed.
 All the necessary files are provide within the two folders: Client and Server.
+
+The clip below shows how the interface looks and how the system works to store and manage student data.
+https://github.com/user-attachments/assets/32930dcb-3e79-4963-bb67-818788fc56b9
+
